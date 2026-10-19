@@ -17,7 +17,7 @@
  */
 const BASE = "/saphal-russian/";
 const PREFIX = "saphal-russian-";
-const CACHE = PREFIX + "4d022fe5f1d6";
+const CACHE = PREFIX + "cda977eeb18b";
 const SHELL = [BASE, BASE + "manifest.webmanifest", BASE + "icons/icon-192.png", BASE + "icons/icon-512.png", BASE + "icons/apple-touch-icon.png"];
 
 const ours = (url) => url.origin === self.location.origin && url.pathname.startsWith(BASE);
