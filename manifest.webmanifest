@@ -6,7 +6,7 @@
   "start_url": "/saphal-russian/",
   "scope": "/saphal-russian/",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "background_color": "#faf8f3",
   "theme_color": "#faf8f3",
   "lang": "en",
