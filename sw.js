@@ -17,7 +17,7 @@
  */
 const BASE = "/saphal-russian/";
 const PREFIX = "saphal-russian-";
-const CACHE = PREFIX + "8bb673ef939a";
+const CACHE = PREFIX + "510ffa934cb5";
 /** The dictionary is large and changes rarely, so it keeps a cache of its own across app versions. */
 const DICT = PREFIX + "dictionary";
 const SHELL = [BASE, BASE + "manifest.webmanifest", BASE + "icons/icon-192.png", BASE + "icons/icon-512.png", BASE + "icons/apple-touch-icon.png"];
