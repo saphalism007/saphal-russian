@@ -17,7 +17,7 @@
  */
 const BASE = "/saphal-russian/";
 const PREFIX = "saphal-russian-";
-const CACHE = PREFIX + "931aaeb33e5b";
+const CACHE = PREFIX + "8bb673ef939a";
 /** The dictionary is large and changes rarely, so it keeps a cache of its own across app versions. */
 const DICT = PREFIX + "dictionary";
 const SHELL = [BASE, BASE + "manifest.webmanifest", BASE + "icons/icon-192.png", BASE + "icons/icon-512.png", BASE + "icons/apple-touch-icon.png"];
@@ -49,6 +49,8 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (!ours(url)) return; // another project's file, or another site: not ours to touch
+  // The note of the latest version is always asked of the network, never saved.
+  if (url.pathname === BASE + "version.json") return;
 
   if (isPage(request, url)) {
     // The saved page at once; the network only if nothing is saved yet.
